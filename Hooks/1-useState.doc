@@ -1,0 +1,35 @@
+
+{
+    Que -1: What is hooks....?
+    Ans - Hooks were added to React in version 16.8.
+    Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+    Hooks allow to manage state and lifecycle of componets
+}
+
+{
+    Que - 2: Define useState hooks...?
+    Ans  - The React useState Hook allows us to track state in a function component.
+    State generally refers to data or properties that need to be tracking in an application.
+    Available in react package;
+}
+
+{
+    Que - 3 How to initialize state ..?
+    Ans - We initialize our state by calling useState in our function component.
+    useState accepts an initial state and returns two values:
+    The current state.
+    A function that updates the state.
+}
+
+{
+    Que - 4 Syntax of useState ...?
+    Ans - const[initialState, setInitialState] = useState("");
+          const[varName, updateFunction] =useState("");
+}
+
+{
+    Que - 5 Why do we use const even we are changing the state value...?
+    Ans - The const keyword is used in JavaScript to declare variables that cannot be reassigned.
+    We are not assigning any new value to state only updating state value;
+    So the refernece is contant but we can change value not reference
+}

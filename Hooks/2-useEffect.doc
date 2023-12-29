@@ -1,0 +1,55 @@
+{
+    Que - 1: What is useEffect hooks ....?
+    Ans => The useEffect Hook allows you to perform side effects in your components.
+    Some examples of side effects are: fetching data, directly updating the DOM, and 
+    timers.
+    useEffect accepts two arguments. The second argument is optional.
+    useEffect(<function>, <dependency>)
+}
+
+{
+    Que - 2: How does it work ...?
+    Ans => When any components loaded on the browser then this effect function loaded;
+    useEffect runs on every render. That means that when the dependency changes, a render
+    happens, which then triggers another effect.
+}
+
+{
+    Que - 3: What is dependency....?
+    Ans => Dependency means the factor on which useEffect rerender 
+}
+
+{
+    Syntax for useEffect
+    
+    Runs on every render 
+    1 => useEffect(()=> {
+
+    });
+
+    Runs on first render 
+    2 => useEffect(()=> {
+
+    }, []);
+
+    Runs on when dependency changes 
+    3 => useEffect(()=> {
+
+    }, [depencyList]);
+}
+
+{
+    Que - 5: Why does some effects require cleanup;
+    Ans => To reduce memory leaks with return keyword
+    e.g
+    useEffect(() => {
+    let timer = setTimeout(() => {
+    setCount((count) => count + 1);
+    }, 1000);
+
+    return () => clearTimeout(timer)
+    }, []);
+
+    return <h1>I've rendered {count} times!</h1>;
+    }
+}
